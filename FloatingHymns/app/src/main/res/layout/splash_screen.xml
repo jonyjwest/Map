@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:background="@color/colorAccent"
+    android:layout_height="fill_parent"
+
+    android:layout_gravity="center"
+    android:id="@+id/lin_lay"
+    android:gravity="fill_horizontal|center|center_horizontal"
+    android:orientation="vertical" android:layout_margin="30dp" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_file"
+        android:textAlignment="center" />
+
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent" android:text="Watch Drug"  android:textStyle="bold"  android:textSize="25dp" android:textAlignment="center" android:padding="15dp"-->
+        <!--android:layout_height="wrap_content"  />-->
+</LinearLayout>

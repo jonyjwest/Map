@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:background="@drawable/register"
+    android:layout_height="match_parent"
+    >
+    <!--android:background="@drawable/register"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+          >
+
+
+
+
+            <!-- Login progress -->
+
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/lnInternetIssue"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/white"-->
+                <!--android:orientation="vertical"-->
+                <!--android:visibility="gone">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:adjustViewBounds="false"-->
+                    <!--android:alpha=".1"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/icon"-->
+                    <!--android:textAlignment="center" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/namever"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:shadowRadius="2"-->
+                    <!--android:text="Error"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="25dp" />-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/namever"-->
+                    <!--android:layout_centerInParent="false"-->
+                    <!--android:layout_centerVertical="false"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:layout_marginTop="40dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingLeft="30dp"-->
+                    <!--android:paddingRight="30dp"-->
+                    <!--android:text="No Network Connection."-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                    <!--android:textColor="#b3b3b3"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView5"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:src="@drawable/wifi" />-->
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/btnTryAgain"-->
+
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/imageView5"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:layout_marginRight="30dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:text="Try Again"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textStyle="bold" />-->
+
+
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:id="@+id/lnbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/lnbtn" android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logowhite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_text_edit"
+                        android:hint="First Name"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+
+                        />
+
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+
+                        android:hint="Last Name"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:background="@drawable/rect_text_edit"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey" />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"  android:padding="10dp"
+                    android:background="@drawable/rect_text_edit"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"  android:padding="10dp"
+                    android:background="@drawable/rect_text_edit"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/password"  android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_text_edit"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey" />
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/chkTc"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+
+                    <!--android:buttonTint="@color/colorWhite"-->
+
+                    <!--android:text="You agree to the T&amp;C's"-->
+                    <!--android:textColor="@color/white" />-->
+
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_button"
+                    android:text="Register"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <ProgressBar
+                    android:id="@+id/login_progress" android:foreground="@color/white"
+                    style="?android:attr/progressBarStyleLarge" android:visibility="gone"
+                    android:layout_width="wrap_content" android:layout_marginTop="16dp"
+                    android:layout_height="40dp" android:layout_gravity="center"
+                    android:layout_marginBottom="14dp"
+                    />
+                <TextView android:id="@+id/haveAcct"
+                android:layout_width="match_parent" android:textAlignment="center"
+                android:text="ALREADY HAVE AN ACCOUNT? SIGN IN" android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

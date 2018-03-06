@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  android:background="@drawable/my_border"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"  android:background="@color/colorPrimary"
+      android:layout_height="match_parent"
+     >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+      <ProgressBar
+          android:id="@+id/pgrGen"
+          android:layout_marginTop="50dp" android:visibility="gone"
+          android:textAlignment="center" android:layout_centerHorizontal="true"
+          android:layout_width="match_parent"
+          android:indeterminate="true"
+          android:layout_gravity="center"
+
+          android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/camera" />
+
+
+    <Button
+        android:id="@+id/button_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/primary_button"
+        android:text="TAKE CAPTURE"
+        android:textColor="@color/white"
+        />
+
+
+    <RelativeLayout android:visibility="gone"
+        android:id="@+id/linCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+       >
+
+
+      <ImageView
+          android:id="@+id/imgTake" android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+
+          android:src="@drawable/ic_photo_camera_white_48dp"
+          android:textColor="@color/white" />
+
+      <ImageView
+      android:id="@+id/imgExit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" android:layout_alignParentRight="true"
+      android:src="@drawable/ic_exit_to_app_white_48dp"
+      android:text="Retake"
+      android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        android:visibility="gone">
+
+      <Button
+          android:id="@+id/button_save"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:layout_weight="1"
+          android:background="@drawable/primary_button"
+          android:text="Save"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/button_capture"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="5dp"
+          android:layout_weight="1"
+          android:background="@drawable/primary_button"
+          android:text="Retake"
+          android:textColor="@color/white" />
+    </LinearLayout>
+  </RelativeLayout>
+
+</LinearLayout>

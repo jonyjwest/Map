@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.emedrep.watchdrug.com.emedrep.reportthat.CaptureView"
+    tools:showIn="@layout/activity_capture_view">
+
+    <ScrollView
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+    <RelativeLayout android:layout_marginTop="1dp"
+        android:layout_width="fill_parent" android:padding="2dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent" android:id="@+id/imgPreview" android:scaleType="fitXY"
+            android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

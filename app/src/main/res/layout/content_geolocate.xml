@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.emedrep.farmmapper.Geolocate"
+    tools:showIn="@layout/activity_geolocate">
+
+
+            <RelativeLayout
+                android:id="@+id/rlForm"
+                android:layout_width="match_parent" android:clickable="true"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout  android:orientation="vertical" android:id="@+id/lntx"
+                    android:layout_width="match_parent" android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:background="@color/grey">
+                        <TextView
+                            android:layout_width="match_parent" android:text="Geolocate at each point " android:textAlignment="center" android:textColor="@color/colorPrimaryDark" android:textSize="12sp"  android:layout_gravity="center_horizontal"
+                            android:layout_height="match_parent" android:padding="4dp" />
+                    </LinearLayout>
+
+
+
+                    <EditText android:id="@+id/txtCurrentCordinate"  android:layout_margin="10dp"
+                        android:hint="Current Coordinate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout android:layout_below="@id/lntx"
+                    android:layout_width="match_parent" android:id="@+id/lblSignal"
+                    android:layout_height="wrap_content"    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true" android:orientation="horizontal" android:textAlignment="center"
+                    android:layout_marginBottom="20dp">
+
+
+                    <TextView
+                        android:id="@+id/txtSignal"  android:text="GPS Signal : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/gpsSignal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout   android:layout_below="@id/lblSignal"
+                    android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnSave"  android:layout_width="wrap_content"
+                        style="?android:textAppearanceSmall"
+                        android:layout_height="wrap_content" android:textAllCaps="false"
+                        android:layout_marginLeft="16dp" android:layout_weight="1"
+                        android:text="Save"   android:layout_marginBottom="14dp"
+                        />
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/listViewCoordinate" android:layout_centerHorizontal="true"  android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent" android:clickable="true" android:focusable="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:dividerHeight="8dp"></ListView>
+            </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

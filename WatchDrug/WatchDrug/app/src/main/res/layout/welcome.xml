@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:background="@drawable/firstpage"
+    android:layout_height="match_parent">
+
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnLaunchReg"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginRight="30dp" android:layout_marginLeft="30dp"
+        android:textAllCaps="false"  android:layout_below="@+id/imageView5" android:textColor="@color/white"
+        android:text="OYA, START REPORTING!" android:background="@drawable/black_button" android:layout_marginBottom="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sign_up"  android:layout_below="@+id/btnLaunchReg" android:layout_marginTop="10dp"
+        style="?android:textAppearanceSmall" android:textColor="@color/colorWhite"
+        android:layout_width="match_parent" android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" android:textAlignment="center"
+
+        android:text="REGISTER" android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</RelativeLayout>

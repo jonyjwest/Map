@@ -1,0 +1,28 @@
+<RelativeLayout android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+  android:padding="10dp"  android:layout_marginBottom="2dp">
+    <LinearLayout android:layout_alignParentTop="true" android:id="@+id/ln"  android:layout_marginBottom="5dp"
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/txtName" android:padding="5dp"  android:text="dsfsdfdsfds sdfsfsd" android:textColor="#fff" android:layout_weight=".2" android:textSize="17dp" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/txtDateCreated" android:padding="5dp"  android:text="d2/34/43" android:layout_weight=".1" android:textColor="#fff"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_alignParentBottom="true" android:orientation="horizontal" android:layout_below="@+id/ln"  android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView  android:id="@+id/btnView"  android:text="View Polyline" android:layout_alignParentRight="true" android:layout_weight="1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp"  android:textColor="@color/colorPrimary" />
+
+        <Button    android:text="Geolocate" android:visibility="invisible" android:layout_alignParentRight="true" android:layout_weight="1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView   android:textColor="@color/colorPrimary" android:id="@+id/btnGeolocate" android:text="Geolocate" android:layout_alignParentRight="true" android:layout_weight="1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="binacodes.floatinghymns.PlayLyricsFading"
+    tools:showIn="@layout/activity_play_lyrics_fading">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent" android:background="@color/colorAccent"
+        android:layout_height="300dp" android:layout_margin="2dp"
+        >
+
+        <TextView
+            android:id="@+id/txtSongFadeTop" android:layout_above="@+id/txtSong" android:text="New Dawn"
+            android:layout_width="match_parent" android:textColor="@color/colorWhite" android:alpha=".4"
+            android:layout_height="wrap_content"  android:padding="5dp"
+            android:layout_gravity="center" android:textAlignment="center"
+
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/txtSong" android:text="New Dawn" android:padding="5dp" android:maxLines="3" android:scrollbars="vertical"
+
+            android:layout_width="match_parent"  android:textColorHint="@color/colorAccent" android:layout_centerInParent="true"
+            android:layout_height="wrap_content" android:textStyle="bold"  android:textColor="@color/colorWhite"
+            android:layout_gravity="center" android:textAlignment="center"
+
+            android:textSize="26sp" />
+        <TextView android:text="New Dawn" android:padding="5dp"
+            android:id="@+id/txtSongFadeBottom" android:layout_below="@+id/txtSong"
+            android:layout_width="match_parent"  android:textColor="@color/colorWhite" android:alpha=".4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" android:textAlignment="center"
+
+            android:textSize="25sp" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

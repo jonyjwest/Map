@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emedrep.watchdrug.com.emedrep.reportthat.PharmacyFinder.NearestPharmacy">
+<TextView
+    android:layout_width="match_parent" android:layout_alignParentTop="true" android:text="Pharmacies closer to you" android:textAlignment="center" android:padding="5dp" android:background="#ffeaeaea"
+    android:layout_height="wrap_content" android:layout_marginBottom="3dp"  />
+
+    <ListView
+        android:id="@+id/listViewPharmacy" android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent" android:clickable="true" android:focusable="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:dividerHeight="8dp"></ListView>
+
+</LinearLayout>

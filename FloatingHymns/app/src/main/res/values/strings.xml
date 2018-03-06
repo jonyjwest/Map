@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Gospel Songs &amp; Lyrics</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_floating">Floating</string>
+    <string name="title_activity_play_lyrics_fading">PlayLyricsFading</string>
+    <string name="title_activity_home">Home</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_parent">ParentActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Downloads</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_test_subtitle">TestSubtitle</string>
+    <string name="choose_file">Select a file</string>
+    <string name="title_activity_lyrics_display">LyricsDisplay</string>
+    <string name="menu_refresh">refresh</string>
+</resources>

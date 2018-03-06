@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent" android:background="@drawable/bgstart"
+        android:layout_height="fill_parent">
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+    />
+    <com.binacodes.floatinghymns.IndicatorHelper.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="10dip"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+    />
+
+        <TextView
+        android:id="@+id/btnNext"
+         android:textAlignment="textEnd"
+        android:layout_width="match_parent" android:textAllCaps="true"
+        android:layout_height="wrap_content" android:textColor="@color/colorWhite" android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:textSize="15dp"
+        android:text="Next>>" android:layout_marginBottom="25dp"
+        android:textStyle="bold"
+        android:gravity="end" />
+    <ProgressBar
+        android:id="@+id/pgrGen"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="right" android:visibility="gone"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="30dp"
+        android:gravity="end"
+        android:indeterminateTint="@color/colorWhite"
+        android:textAlignment="textEnd"
+
+        />
+
+
+</LinearLayout>

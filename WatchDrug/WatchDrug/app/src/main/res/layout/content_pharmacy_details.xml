@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.emedrep.reportthat.PharmacyFinder.PharmacyDetails"
+    tools:showIn="@layout/activity_pharmacy_details">
+
+    <LinearLayout
+        android:layout_width="0dp" android:orientation="vertical"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp" android:textStyle="bold" android:id="@+id/txtName"
+                android:layout_height="wrap_content" android:textSize="14sp" android:textAllCaps="true"
+                android:drawableLeft="@drawable/pharmap" android:drawablePadding="2dp"
+                android:text=" God's Own Pharmacy" />
+
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp"  android:id="@+id/txtAddress"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="2dp"
+                android:text="Address : 21, Bola street, Aboru Iyana-Ipaja Lagos." />
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp" android:id="@+id/txtPremiseType"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Premises Type : Retail Pharmacy" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content" android:padding="5dp" android:id="@+id/txtDistance"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:text="Distance :3.8km" />-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content" android:padding="5dp" android:id="@+id/txtTime1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:text="Time by foot :2 min" />-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content" android:padding="5dp" android:id="@+id/txtTime2"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:text="Time by car :1min" />-->
+            <TextView
+                android:layout_width="wrap_content" android:layout_marginTop="15dp" android:id="@+id/txtViewOnMap" android:clickable="true"
+                android:layout_height="wrap_content"  android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="2dp" android:padding="5dp"
+                android:text="View on Map" />
+        </LinearLayout>
+
+        <!--<LinearLayout android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:padding="50dp">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/pharmap" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="God's Own Pharmacy" />-->
+        <!--</LinearLayout>-->
+       <!--<LinearLayout-->
+        <!--android:layout_width="match_parent" -->
+        <!--android:layout_height="wrap_content" -->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:padding="50dp">-->
+        <!---->
+           <!--<TextView-->
+               <!--android:layout_width="wrap_content" android:text="Distance"  -->
+               <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.emedrep.reportthat.PlaceVisited.ReportVisit"
+    tools:showIn="@layout/activity_report_visit">
+
+ <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="5dp">
+
+            <!--<include layout="@layout/layout_internet_issue"-->
+            <!--android:layout_width="match_parent" android:layout_height="match_parent" ></include>-->
+            <ProgressBar
+                android:id="@+id/pgrGen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+                android:indeterminate="true"
+                android:textAlignment="center"
+
+
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/myTextProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/pgrGen"
+                android:layout_alignLeft="@id/pgrGen"
+                android:layout_alignRight="@id/pgrGen"
+                android:layout_alignTop="@id/pgrGen"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Submitting report... "
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/lnInternetIssue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="false"
+                    android:alpha=".1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/namever"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="40dp"
+                    android:shadowRadius="2"
+                    android:text="Error"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25dp" />
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namever"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="No Network Connection."
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#b3b3b3"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/wifi" />
+
+
+                <Button
+                    android:id="@+id/btnTryAgain"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView5"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Try Again"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:clickable="true" android:id="@+id/lnImage"
+                    android:layout_height="wrap_content"
+                    android:background="@color/holo_green"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgPreview"
+                        android:layout_width="match_parent"
+
+                        android:layout_marginBottom="20dp"
+                        android:adjustViewBounds="true"
+
+                        android:layout_height="147dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/camera" />
+
+                    <TextView
+                        android:layout_width="match_parent"  android:id="@+id/txtClick"
+                        android:layout_height="wrap_content" android:textColor="@color/white"
+                        android:gravity="center_horizontal" android:padding="10dp"
+                        android:text="Tap to take capture" />
+                </LinearLayout>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDrugName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Name of Product"
+                    android:inputType="textNoSuggestions"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/rect_text_edit_with_border"
+                    android:textColor="@color/bpblack"
+                    android:textColorHint="@color/grey" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/spinner_background"
+                    android:padding="2dp">
+
+                    <Spinner
+                        android:id="@+id/spnSuspicion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginTop="2dip"
+                        android:backgroundTint="@color/white"
+                        android:textColorHint="@color/white">
+
+                    </Spinner>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/txtSuspicious"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dip"
+                    android:backgroundTint="@color/grey"
+                    android:hint="Type Your Suspicion "
+                    android:singleLine="true"
+                    android:textColor="@color/bpblack"
+
+                    android:textColorHint="@color/grey"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:text="Report as:"
+                    android:textAllCaps="true" />
+                <!--<RadioGroup android:layout_width="fill_parent" android:background="@color/grey" android:id="@+id/rdBtnGrp" android:padding="2dp" android:layout_height="wrap_content" android:orientation="vertical">-->
+
+                <!--<RadioButton android:id="@+id/rnd1" android:layout_width="wrap_content" android:checked="true" android:layout_height="wrap_content"  android:text="John Ogunsoyin"   android:layout_weight=".002"/>-->
+                <!--<RadioButton-->
+                <!--android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Anonymous"   android:layout_weight=".002"/>-->
+
+                <!--</RadioGroup>-->
+                <LinearLayout android:background="@drawable/spinner_background"
+                    android:layout_width="match_parent" android:orientation="horizontal"
+                    android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:textColor="@color/white"
+                        android:layout_height="wrap_content" android:id="@+id/txtName"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" android:padding="5dp"
+                        android:text="Bassey Akpan" />
+
+                    <CheckBox
+                        android:id="@+id/chkName"
+                        android:layout_width="wrap_content" android:foregroundTint="@color/white"
+                        android:layout_height="wrap_content" android:buttonTint="@color/colorWhite"
+                        android:layout_gravity="end" android:backgroundTint="@color/white"
+                        android:textAlignment="textEnd" />
+                </LinearLayout>
+
+                <LinearLayout android:background="@drawable/grey_background"
+                    android:layout_width="match_parent" android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" android:padding="5dp"
+                        android:text="Anonymous" />
+
+                    <CheckBox
+                        android:id="@+id/chkAnonymous" android:checked="true"
+                        android:layout_width="wrap_content" android:foregroundTint="@color/white"
+                        android:layout_height="wrap_content" android:buttonTint="@color/colorWhite"
+                        android:layout_gravity="end" android:backgroundTint="@color/white"
+                        android:textAlignment="textEnd" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnReport" android:padding="5dp"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:textAllCaps="true"
+                        android:layout_margin="5dp"
+                        android:text="send report" android:background="@color/holo_red" android:textColor="@color/white" android:layout_marginBottom="14dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

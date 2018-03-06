@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Land Mapper</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_farm_land">New FarmLand</string>
+    <string name="title_activity_geolocate">Geolocate</string>
+    <string name="title_activity_polyline_display">Polyline Display</string>
+</resources>

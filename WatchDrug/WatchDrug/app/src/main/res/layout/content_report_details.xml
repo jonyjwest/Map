@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.emedrep.reportthat.PharmacyFinder.PharmacyDetails"
+    tools:showIn="@layout/activity_pharmacy_details">
+
+    <LinearLayout
+        android:layout_width="0dp" android:orientation="vertical"
+        android:layout_height="wrap_content"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            >
+
+
+
+                <TextView android:layout_weight="1"
+                    android:layout_width="match_parent" android:padding="5dp" android:textStyle="bold" android:id="@+id/txtDrugName"
+                    android:layout_height="wrap_content" android:textSize="14sp" android:textAllCaps="true"
+                    android:drawablePadding="2dp"
+                    android:text=" Paracemtamol" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:padding="5dp"   android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="Manufacturer :" />
+
+                <TextView
+                    android:layout_width="wrap_content" android:padding="5dp"  android:id="@+id/txtManufacturer" android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="Paracetamol" android:gravity="right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp"   android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Suspicion Type :" />
+
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp"  android:id="@+id/txtSuspicious" android:layout_weight="1"
+                android:layout_height="wrap_content" android:gravity="right"
+                android:layout_marginLeft="2dp"
+                android:text="Suspicion." />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp"   android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Vendor :" />
+
+                <TextView
+                    android:layout_width="wrap_content" android:padding="5dp"  android:id="@+id/txtPremiseName" android:layout_weight="1"
+                    android:layout_height="wrap_content" android:gravity="right"
+                    android:layout_marginLeft="2dp"
+                    android:text="Premises" />
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp"   android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Vendor Address :" />
+
+            <TextView
+                android:layout_width="wrap_content" android:padding="5dp"  android:id="@+id/txtAddress" android:layout_weight="1"
+                android:layout_height="wrap_content" android:gravity="right"
+                android:layout_marginLeft="2dp"
+                android:text="Premises Address" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

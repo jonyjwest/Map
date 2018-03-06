@@ -1,0 +1,50 @@
+<LinearLayout android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="horizontal" >
+    <LinearLayout android:layout_weight="90" android:layout_marginRight="10dp"
+        android:layout_width="wrap_content" android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/txtName" android:text="Shoprite Health Plus" android:textSize="16sp" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/txtAddress" android:text="This is where fake drug is being sold" android:textSize="11sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+
+        <TextView android:id="@+id/txtDate" android:text="24th of Jan 2017" android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@id/lnbtn" android:layout_weight="10"
+        android:layout_width="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1" android:textAllCaps="false"
+            android:text="Edit "
+            />
+
+
+        <Button android:layout_marginLeft="5dp"
+            android:id="@+id/btnDelete"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"  android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1" android:textAllCaps="false"
+            android:text="Delete"
+            />
+    </LinearLayout>
+<!--<Button android:layout_weight="10"  android:id="@+id/btnSend"   android:background="@drawable/black_button"-->
+    <!--android:layout_width="wrap_content" android:text="Edit" android:textColor="@color/white"-->
+    <!--android:layout_height="35dp" />-->
+
+    <!--<Button android:layout_weight="10"  android:id="@+id/btnDelete"  android:background="@drawable/black_button"-->
+        <!--android:layout_width="wrap_content" android:text="Edit" android:textColor="@color/white"-->
+        <!--android:layout_height="35dp" />-->
+
+</LinearLayout>
+
